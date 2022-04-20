@@ -6,6 +6,8 @@ bin-release/
 
 # Other files and folders
 .settings/
+test.md/
+node_modules/
 
 # Executables
 *.swf

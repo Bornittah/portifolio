@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color:#172B4D;
+    width:100vw;
+    font-family: Inter, sans-serif;
+}
+.primary {
+    color:#172B4D;
+}
+.secondary {
+    color: #36B37E;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+.nav {
+    margin:24px auto; 
+    width: 90%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-menu {
+   align-items: center;
+}
+.nav-menu ul {
+  list-style-type: none;
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+}
+.nav-menu ul li {
+    margin:0 15px;
+}
+.nav-menu ul li a {
+   text-decoration: none;
+   color:#172B4D;
+}
+.section {
+    background-image: url(../assets/images/header-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+ }
+ .wrapper {
+    width: 90%;
+    height: 100%;
+    margin:0 auto;
+ }
+ .titles {
+     text-align:center;
+     line-height: 1.5;
+ }
+ .description {
+     text-align:center;
+     margin:24px auto;
+     padding: auto 14px;
+     width: 50%;
+ }
+ .social-icons{
+     align-items: center;
+     text-align: center;
+ }
+ .social-icons a {
+     text-decoration:none;
+     padding:5px;
+ }
+ .social-icons a i{
+     font-size:25px;
+     color:#172B4D;
+ }
+ .down-arrow{
+     text-align:center;
+     margin: 45px auto;
+ }
+ .down-arrow a{
+    border-radius:50%;
+    padding:8px;
+    border:0.5px solid #172B4D;
+    text-align:center;
+    text-decoration: none;
+ }
+ .down-arrow i{
+     padding:8px;
+    
+ }
+
+ @media (max-width:375px) {
+    .section{
+        padding:15px;
+    }
+     .nav-menu {
+        visibility:hidden;
+     }
+     .nav-menu ul {
+        flex-direction:column;
+      }
+     .titles {
+         padding: 0 14px;
+         line-height:1.2;
+         margin:24px auto;
+     }
+     .description {
+         width:100%;
+     }
+ }
