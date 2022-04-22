@@ -469,4 +469,26 @@ body {
   .form-group textarea {
     margin: 0;
   }
+  .project-title {
+    flex-direction: column;
+  }
+
+  .frameworks {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .view-btn {
+    position: fixed;
+    top: 90vh;
+    bottom: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .view-btn li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+  }
 }
