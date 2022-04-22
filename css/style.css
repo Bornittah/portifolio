@@ -469,6 +469,7 @@ body {
   .form-group textarea {
     margin: 0;
   }
+
   .project-title {
     flex-direction: column;
   }
@@ -483,7 +484,7 @@ body {
     top: 90vh;
     bottom: 15px;
     width: 80%;
-    margin: 0 auto;
+    margin: 8px auto;
   }
 
   .view-btn li {
