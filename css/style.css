@@ -364,6 +364,73 @@ body {
   height: 48px;
 }
 
+/* single project */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  width: 100%;
+  padding: 25px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.view-btn {
+  list-style-type: none;
+  display: flex;
+}
+
+.view-btn li {
+  margin: 0 8px;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.view-btn li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.frameworks {
+  list-style-type: none;
+  display: flex;
+  margin: 12px 0;
+}
+
+.frameworks li {
+  padding: 10px;
+  background-color: #aeb3bb;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.project-description {
+  margin: 12px 0;
+}
+
+.project-description p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
 @media (max-width: 375px) {
   .titles {
     padding: 0 24px;
