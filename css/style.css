@@ -37,7 +37,6 @@ body {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -48,7 +47,6 @@ body {
 
 .section {
   align-items: center;
-  min-height: 100vh;
   margin: 24px auto;
 }
 
@@ -221,6 +219,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .about-bg-imgs img {
@@ -232,6 +231,7 @@ body {
 .skills-set {
   margin: 30px auto;
   width: 80%;
+  list-style-type: none;
 }
 
 .skill-item {
@@ -431,11 +431,15 @@ body {
   line-height: 1.5;
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   .titles {
     padding: 0 24px;
     line-height: 1.2;
     margin: 24px auto;
+  }
+
+  .section-bg-image {
+    height: 80%;
   }
 
   .grid-container {
@@ -452,10 +456,81 @@ body {
 
   .about-bg-imgs {
     visibility: hidden;
+    flex-direction: column;
+    height: 100px;
   }
 
   .bottom-bg-imgs {
     visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-image {
+    visibility: hidden;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group textarea {
+    margin: 0;
+  }
+
+  .project-title {
+    flex-direction: column;
+  }
+
+  .frameworks {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .view-btn {
+    position: fixed;
+    top: 90vh;
+    bottom: 15px;
+    width: 80%;
+    margin: 8px auto;
+  }
+
+  .view-btn li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .titles {
+    padding: 0 24px;
+    line-height: 1.2;
+    margin: 24px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .technologies li {
+    font-size: 0.7rem;
+  }
+
+  .contacts-row {
+    flex-direction: column;
+  }
+
+  .about-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
   }
 
   .bottom-bg-image {
