@@ -9,8 +9,6 @@
 body {
   color: #172b4d;
   font-family: Inter, sans-serif;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .primary {
@@ -39,7 +37,6 @@ body {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -50,7 +47,7 @@ body {
 
 .section {
   align-items: center;
-  min-height: 100vh;
+  margin: 24px auto;
 }
 
 .section-bg-image {
@@ -137,13 +134,13 @@ body {
   margin: 24px auto;
 }
 
-.projects-section {
+.grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-.project-grid-item {
+.grid-item {
   border: 1px solid #d6d5da;
   display: flex;
   flex-direction: column;
@@ -204,18 +201,370 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 375px) {
+/* about section */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto;
+  width: 75%;
+  position: relative;
+  z-index: 100;
+}
+
+.about-bg-imgs {
+  position: absolute;
+  z-index: -100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-bg-imgs img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.skills-set {
+  margin: 30px auto;
+  width: 80%;
+  list-style-type: none;
+}
+
+.skill-item {
+  background-image: url(../assets/images/Img-Plaholder.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px auto;
+  border: none;
+}
+
+.item-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-icon img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.item-langs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 24px auto;
+}
+
+.item-langs li {
+  padding: 10px;
+  background-color: #fff;
+  color: #36b37e;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* contacts section */
+.contacts-row {
+  display: flex;
+  margin: 30px auto;
+  width: 80%;
+  z-index: 100;
+  position: relative;
+}
+
+.bottom-bg-imgs {
+  position: absolute;
+  z-index: -100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom-bg-imgs img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.bottom-bg-image {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: -100;
+  align-items: center;
+}
+
+.contact-column {
+  margin: 8px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-notice {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 2;
+  font-style: normal;
+  text-align: center;
+}
+
+.contact-column form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  margin: 12px;
+}
+
+.form-group input {
+  height: 48px;
+  width: 100%;
+  border: 0.5px solid #36b37e;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  border: 0.5px solid #36b37e;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.form-group button {
+  background-color: #36b37e;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 15px;
+  height: 48px;
+}
+
+/* single project */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  width: 100%;
+  padding: 25px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.view-btn {
+  list-style-type: none;
+  display: flex;
+}
+
+.view-btn li {
+  margin: 0 8px;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.view-btn li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.frameworks {
+  list-style-type: none;
+  display: flex;
+  margin: 12px 0;
+}
+
+.frameworks li {
+  padding: 10px;
+  background-color: #aeb3bb;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.project-description {
+  margin: 12px 0;
+}
+
+.project-description p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
   .titles {
     padding: 0 24px;
     line-height: 1.2;
     margin: 24px auto;
   }
 
-  .projects-section {
-    grid-template-columns: auto;
+  .section-bg-image {
+    height: 80%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 
   .technologies li {
     font-size: 0.7rem;
+  }
+
+  .contacts-row {
+    flex-direction: column;
+  }
+
+  .about-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-image {
+    visibility: hidden;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group textarea {
+    margin: 0;
+  }
+
+  .project-title {
+    flex-direction: column;
+  }
+
+  .frameworks {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .view-btn {
+    position: fixed;
+    top: 90vh;
+    bottom: 15px;
+    width: 80%;
+    margin: 8px auto;
+  }
+
+  .view-btn li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .titles {
+    padding: 0 24px;
+    line-height: 1.2;
+    margin: 24px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .technologies li {
+    font-size: 0.7rem;
+  }
+
+  .contacts-row {
+    flex-direction: column;
+  }
+
+  .about-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-imgs {
+    visibility: hidden;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .bottom-bg-image {
+    visibility: hidden;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group textarea {
+    margin: 0;
+  }
+
+  .project-title {
+    flex-direction: column;
+  }
+
+  .frameworks {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .view-btn {
+    position: fixed;
+    top: 90vh;
+    bottom: 15px;
+    width: 80%;
+    margin: 8px auto;
+  }
+
+  .view-btn li {
+    flex: 1;
+    text-align: center;
+    align-items: center;
   }
 }
