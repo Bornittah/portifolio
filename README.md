@@ -1,17 +1,20 @@
 # portifolio
-This is a portifolio website to show the capabilities of a developer. the aim of this project is to learn how to build the website and its mobile view
+This is a portifolio website to show the capabilities of a developer. The aim of this project is to learn how to build the website and its mobile version.
 
 # Getting started
     #Step 1
     *Navigate to the local folder and clone the repository from the github 
-    *Run https://github.com/Bornittah/portifolio.git
+    *Run "git clone https://github.com/Bornittah/portifolio.git"
+
     #Step 2
     *Navigate to the cloned project
     *open the index.html file in your browser
 
 # Built With
 *Languages - HTML and CSS
+
 *Frameworks - None
+
 *Technologies - Web Technology
 
 # Contributing
