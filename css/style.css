@@ -122,8 +122,6 @@ body {
   border: 1px solid #aeb3bb;
 }
 
-/* rec ent work section */
-
 .title {
   text-align: center;
   font-size: 1.2rem;
@@ -205,16 +203,6 @@ body {
   height: 24px;
 }
 
-.green-btn a:hover {
-    background-color: #36b37f;
-}
-
-.green-btn a:active {
-    background-color: #008552;
-}
-
-/* about section */
-
 .about-header {
   display: flex;
   flex-direction: column;
@@ -291,8 +279,6 @@ body {
   white-space: nowrap;
 }
 
-/* contacts section */
-
 .contacts-row {
   display: flex;
   margin: 30px auto;
@@ -340,7 +326,7 @@ body {
 
 .contact-column form {
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -381,14 +367,12 @@ body {
 }
 
 .form-group button:hover {
-    background-color: #36b37f;
+  background-color: #36b37f;
 }
 
 .form-group button:active {
-    background-color: #008552;
+  background-color: #008552;
 }
-
-/* single project */
 
 .project-details {
   display: flex;
@@ -454,6 +438,14 @@ body {
 .project-description p {
   text-align: justify;
   line-height: 1.5;
+}
+
+.green-btn a:hover {
+  background-color: #36b37f;
+}
+
+.green-btn a:active {
+  background-color: #008552;
 }
 
 @media only screen and (max-width: 600px) {
