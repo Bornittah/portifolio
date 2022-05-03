@@ -30,4 +30,8 @@ This project is MIT licensed.
 # Author
 1. Agasha Bornittah 
 Github: https://github.com/Bornittah
+2. Abby Nyakara
+Github: https://github.com/AbbyNyakara
+3. Ngufor Emmanuella
+Github: https://github.com/Ngufor-emmanuella
 

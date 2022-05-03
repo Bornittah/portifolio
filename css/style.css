@@ -122,7 +122,6 @@ body {
   border: 1px solid #aeb3bb;
 }
 
-/* rec ent work section */
 .title {
   text-align: center;
   font-size: 1.2rem;
@@ -186,22 +185,24 @@ body {
   word-wrap: break-word;
   font-size: 0.75rem;
   border-radius: 5px;
+  float: left;
 }
 
 .green-btn {
-  margin: 18px auto;
+  margin: 24px auto;
 }
 
 .green-btn a {
   background-color: #36b37e;
   color: #fff;
-  padding: 8px 8px;
+  padding: 12px 12px;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+  width: 98px;
+  height: 24px;
 }
 
-/* about section */
 .about-header {
   display: flex;
   flex-direction: column;
@@ -278,7 +279,6 @@ body {
   white-space: nowrap;
 }
 
-/* contacts section */
 .contacts-row {
   display: flex;
   margin: 30px auto;
@@ -326,6 +326,8 @@ body {
 
 .contact-column form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
@@ -350,7 +352,7 @@ body {
   outline: none;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0 5px;
+  padding: 5px 5px;
   margin: 0 5px;
 }
 
@@ -360,11 +362,18 @@ body {
   outline: none;
   border: none;
   border-radius: 4px;
-  padding: 6px 15px;
-  height: 48px;
+  padding: 12px;
+  width: 105px;
 }
 
-/* single project */
+.form-group button:hover {
+  background-color: #36b37f;
+}
+
+.form-group button:active {
+  background-color: #008552;
+}
+
 .project-details {
   display: flex;
   flex-direction: column;
@@ -429,6 +438,14 @@ body {
 .project-description p {
   text-align: justify;
   line-height: 1.5;
+}
+
+.green-btn a:hover {
+  background-color: #36b37f;
+}
+
+.green-btn a:active {
+  background-color: #008552;
 }
 
 @media only screen and (max-width: 600px) {
