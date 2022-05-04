@@ -33,16 +33,66 @@ body {
 }
 
 .toolbar {
-  margin: 24px auto;
-  width: 80%;
+  padding: 26px 24px;
   display: flex;
   justify-content: space-between;
+  background: transparent;
+  height: 72px;
+  top: 0;
+}
+
+.green-btn a {
+  background-color: #36b37e;
+  color: #fff;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 98px;
+  height: 24px;
+}
+
+.down-arrow a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 10px 12px;
+}
+
+.menu li a {
+  color: #344563;
+  text-decoration: none;
 }
 
 .logo {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
+  display: none;
+}
+
+.navbar {
+  display: none;
 }
 
 .section {
@@ -55,16 +105,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .wrapper {
-  width: 90%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 160px auto;
 }
 
 .icon {
@@ -73,11 +124,12 @@ body {
   opacity: 75%;
 }
 
-.titles {
+.title {
   text-align: center;
   line-height: 2;
   font-weight: 500;
   font-size: 1.2rem;
+  margin: 24px auto;
 }
 
 .description {
@@ -89,6 +141,7 @@ body {
 .social-icons {
   align-items: center;
   text-align: center;
+  margin: 24px auto;
 }
 
 .social-icons ul {
@@ -96,24 +149,16 @@ body {
   display: flex;
 }
 
-.social-icons a {
-  text-decoration: none;
-  padding: 5px;
-}
-
 .social-icons a i {
-  font-size: 25px;
   color: #172b4d;
+  height: 20px;
+  width: 18px;
+  margin: 0 21px;
 }
 
 .down-arrow {
   text-align: center;
   margin: 70px auto;
-}
-
-.down-arrow a {
-  text-align: center;
-  text-decoration: none;
 }
 
 .down-arrow img {
@@ -122,15 +167,11 @@ body {
   border: 1px solid #aeb3bb;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
 .line {
   border: 2px solid #36b37e;
   width: 60px;
   margin: 24px auto;
+  display: none;
 }
 
 .grid-container {
@@ -192,24 +233,13 @@ body {
   margin: 24px auto;
 }
 
-.green-btn a {
-  background-color: #36b37e;
-  color: #fff;
-  padding: 12px 12px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 98px;
-  height: 24px;
-}
-
 .about-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 30px auto;
-  width: 75%;
+  width: 55%;
   position: relative;
   z-index: 100;
 }
@@ -281,7 +311,7 @@ body {
 
 .contacts-row {
   display: flex;
-  margin: 30px auto;
+  margin: 80px auto;
   width: 80%;
   z-index: 100;
   position: relative;
@@ -289,7 +319,7 @@ body {
 
 .bottom-bg-imgs {
   position: absolute;
-  z-index: -100;
+  z-index: -1;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -304,8 +334,8 @@ body {
 .bottom-bg-image {
   max-width: 100%;
   max-height: 100%;
-  position: absolute;
-  z-index: -100;
+  position: relative;
+  z-index: -1;
   align-items: center;
 }
 
@@ -314,6 +344,8 @@ body {
   flex: 1;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-notice {
@@ -448,7 +480,39 @@ body {
   background-color: #008552;
 }
 
+.footer {
+  border-top: 1px solid #aeb3bb;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 @media only screen and (max-width: 600px) {
+  .toolbar {
+    background: white;
+  }
+
+  .nav-menu {
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .wrapper {
+    margin: 24px;
+  }
+
   .titles {
     padding: 0 24px;
     line-height: 1.2;
@@ -517,9 +581,37 @@ body {
     text-align: center;
     align-items: center;
   }
+
+  .line {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+  .toolbar {
+    background: white;
+  }
+
+  .nav-menu {
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .wrapper {
+    margin: 24px;
+  }
+
   .titles {
     padding: 0 24px;
     line-height: 1.2;
@@ -583,5 +675,9 @@ body {
     flex: 1;
     text-align: center;
     align-items: center;
+  }
+
+  .line {
+    display: block;
   }
 }
