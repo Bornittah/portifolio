@@ -227,6 +227,7 @@ body {
   font-size: 0.75rem;
   border-radius: 5px;
   float: left;
+  color: rgba(127, 140, 255, 1)
 }
 
 .green-btn {
