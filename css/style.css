@@ -995,6 +995,20 @@ body {
     margin: 8px auto;
   }
 
+  .technologies li a {
+    text-decoration: none;
+    color: rgba(127, 140, 255, 1);
+  }
+  
+  .technologies li:hover {
+    background-color: #36B37F;
+    color: white;
+  }
+  
+  .technologies li a:hover {
+    color: white;
+  }
+  
   .view-btn li {
     flex: 1;
     text-align: center;
