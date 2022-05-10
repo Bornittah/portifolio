@@ -807,14 +807,6 @@ body {
     background-color: green;
   }
 
-  div > .green-btn a:hover {
-    background-color: green;
-  }
-
-  .form-group button:active {
-    background-color: #008552;
-  }
-
   .project-details {
     display: flex;
     flex-direction: column;
@@ -841,6 +833,14 @@ body {
   .view-btn {
     list-style-type: none;
     display: flex;
+  }
+
+  div > .green-btn a:hover {
+    background-color: green;
+  }
+
+  .form-group button:active {
+    background-color: #008552;
   }
 
   .view-btn li {
