@@ -210,6 +210,34 @@ body {
   text-align: center;
 }
 
+.frameworks li {
+  padding: 10px;
+  background-color: #aeb3bb;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.view-btn li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.technologies li a {
+  text-decoration: none;
+  color: rgba(127, 140, 255, 1);
+}
+
+.green-btn a:hover {
+  background-color: rgb(29, 140, 106);
+}
+
+.green-btn a:active {
+  background-color: #008552;
+}
+
 .technologies {
   display: flex;
   align-items: center;
@@ -227,11 +255,6 @@ body {
   font-size: 0.75rem;
   border-radius: 5px;
   float: left;
-  color: rgba(127, 140, 255, 1);
-}
-
-.technologies li a {
-  text-decoration: none;
   color: rgba(127, 140, 255, 1);
 }
 
@@ -300,6 +323,13 @@ body {
   white-space: nowrap;
 }
 
+.view-btn li {
+  margin: 0 8px;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
 
 .technologies li:hover {
   background-color: #36b37f;
@@ -423,33 +453,10 @@ body {
   display: flex;
 }
 
-.view-btn li {
-  margin: 0 8px;
-  background-color: #36b37e;
-  color: #fff;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.view-btn li a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .frameworks {
   list-style-type: none;
   display: flex;
   margin: 12px 0;
-}
-
-.frameworks li {
-  padding: 10px;
-  background-color: #aeb3bb;
-  text-align: center;
-  margin: 5px 5px;
-  font-size: 0.75rem;
-  border-radius: 5px;
-  white-space: nowrap;
 }
 
 .project-description {
@@ -459,14 +466,6 @@ body {
 .project-description p {
   text-align: justify;
   line-height: 1.5;
-}
-
-.green-btn a:hover {
-  background-color: blue;
-}
-
-.green-btn a:active {
-  background-color: #008552;
 }
 
 .bottom-line {
@@ -835,10 +834,6 @@ body {
     display: flex;
   }
 
-  div > .green-btn a:hover {
-    background-color: green;
-  }
-
   .form-group button:active {
     background-color: #008552;
   }
@@ -887,6 +882,10 @@ body {
 
   .green-btn a:active {
     background-color: #008552;
+  }
+
+  div > .green-btn a:hover {
+    background-color: green;
   }
 
   .footer {
@@ -996,24 +995,24 @@ body {
     margin: 8px auto;
   }
 
-  .technologies li a {
-    text-decoration: none;
-    color: rgba(127, 140, 255, 1);
-  }
-  
-  .technologies li:hover {
-    background-color: #36b37f;
-    color: white;
-  }
-  
-  .technologies li a:hover {
-    color: white;
-  }
-  
   .view-btn li {
     flex: 1;
     text-align: center;
     align-items: center;
+  }
+
+  .technologies li a {
+    text-decoration: none;
+    color: rgba(127, 140, 255, 1);
+  }
+
+  .technologies li:hover {
+    background-color: #36b37f;
+    color: white;
+  }
+
+  .technologies li a:hover {
+    color: white;
   }
 
   .line {
