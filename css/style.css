@@ -220,7 +220,7 @@ body {
 
 .technologies li {
   padding: 10px;
-  background-color: #ebf0ee; 
+  background-color: #ebf0ee;
   text-align: center;
   margin: 5px 5px;
   word-wrap: break-word;
@@ -233,15 +233,6 @@ body {
 .technologies li a {
   text-decoration: none;
   color: rgba(127, 140, 255, 1);
-}
-
-.technologies li:hover {
-  background-color: #36B37F;
-  color: white;
-}
-
-.technologies li a:hover {
-  color: white;
 }
 
 .green-btn {
@@ -307,6 +298,16 @@ body {
   font-size: 0.75rem;
   border-radius: 5px;
   white-space: nowrap;
+}
+
+
+.technologies li:hover {
+  background-color: #36b37f;
+  color: white;
+}
+
+.technologies li a:hover {
+  color: white;
 }
 
 .contacts-row {
@@ -1001,7 +1002,7 @@ body {
   }
   
   .technologies li:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     color: white;
   }
   
