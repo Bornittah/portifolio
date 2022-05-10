@@ -220,7 +220,7 @@ body {
 
 .technologies li {
   padding: 10px;
-  background-color: #ebf0ee;
+  background-color: #ebf0ee; 
   text-align: center;
   margin: 5px 5px;
   word-wrap: break-word;
@@ -228,6 +228,20 @@ body {
   border-radius: 5px;
   float: left;
   color: rgba(127, 140, 255, 1);
+}
+
+.technologies li a {
+  text-decoration: none;
+  color: rgba(127, 140, 255, 1);
+}
+
+.technologies li:hover {
+  background-color: #36B37F;
+  color: white;
+}
+
+.technologies li a:hover {
+  color: white;
 }
 
 .green-btn {
@@ -447,7 +461,7 @@ body {
 }
 
 .green-btn a:hover {
-  background-color: #36b37f;
+  background-color: blue;
 }
 
 .green-btn a:active {
@@ -789,7 +803,11 @@ body {
   }
 
   .form-group button:hover {
-    background-color: #36b37f;
+    background-color: green;
+  }
+
+  div > .green-btn a:hover {
+    background-color: green;
   }
 
   .form-group button:active {
