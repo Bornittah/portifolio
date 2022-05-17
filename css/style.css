@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -107,6 +107,18 @@ body {
   margin: 5px auto;
   background-color: #1a1b1b;
   transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
 .section {
@@ -919,12 +931,15 @@ body {
   }
 
   .about-bg-img {
-    background: url(../assets/images/about-me/about-me-left.svg) left no-repeat, url(../assets/images/about-me/aboutmedesktop-right.svg) right no-repeat;
+    background: url(../assets/images/about-me/about-me-left.svg) left no-repeat,
+      url(../assets/images/about-me/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom no-repeat, url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
+    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
+        no-repeat,
+      url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
   }
 }
 
@@ -1054,12 +1069,17 @@ body {
   }
 
   .about-bg-img {
-    background: url(../assets/images/about-me/about-me-left.svg) left bottom no-repeat, url(../assets/images/about-me/aboutmedesktop-right.svg) right top no-repeat;
+    background: url(../assets/images/about-me/about-me-left.svg) left bottom
+        no-repeat,
+      url(../assets/images/about-me/aboutmedesktop-right.svg) right top
+        no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom no-repeat, url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
+    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
+        no-repeat,
+      url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
 }
