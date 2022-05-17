@@ -63,11 +63,11 @@ body {
 }
 
 .nav-menu {
-  display: none;
-  width: 100%;
-  align-items: center;
+  display: flex;
+  width: 80%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 24px auto;
 }
 
 .menu {
@@ -91,13 +91,36 @@ body {
   display: block;
 }
 
-.navbar {
+.nav-menu.active {
   display: block;
+}
+
+.logo.active {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+  text-align: left;
+}
+
+.menu.active li {
+  margin: 10px 0;
+}
+
+.menu.active li a {
+  color: #344563;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  font-size: 32px;
 }
 
 .hamburger {
   cursor: pointer;
   color: #1a1b1b;
+  display: none;
 }
 
 .bar {
@@ -109,16 +132,34 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #1a1b1b;
+}
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+  background-color: #1a1b1b;
 }
 
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+.overlay.active {
+  display: block;
+  height: 98vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1; 
+  background-color: #fff;
+  border-radius: 5%;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  color: white;
 }
 
 .section {
@@ -509,24 +550,23 @@ body {
     background: white;
   }
 
-  .logo {
+  .overlay.active {
     display: none;
   }
 
-  .navbar {
+  .logo {
     display: none;
   }
 
   .nav-menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .menu {
     display: flex;
-  }
-
-  .menu-popup {
-    display: none;
   }
 
   .section {
@@ -953,14 +993,14 @@ body {
     display: flex;
   }
 
+  .hamburger {
+    display: block;
+  }
+
   .logo {
     display: block;
   }
-
-  .navbar {
-    display: block;
-  }
-
+  
   .menu {
     display: none;
   }
