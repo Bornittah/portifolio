@@ -60,6 +60,14 @@ body {
   padding: 5px;
 }
 
+.view-btn li {
+  margin: 0 8px;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 .nav-menu {
   display: flex !important;
   width: 80%;
@@ -102,19 +110,6 @@ body {
   text-align: left;
 }
 
-.menu.active li {
-  margin: 10px 0;
-}
-
-.menu.active li a {
-  color: #344563;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 44px;
-  font-size: 32px;
-}
-
 .hamburger {
   cursor: pointer;
   color: #1a1b1b;
@@ -149,10 +144,10 @@ body {
   height: 98vh;
   width: 100%;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   background-color: #fff;
   border-radius: 5%;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   left: 0;
   top: 0;
   overflow: hidden;
@@ -388,14 +383,6 @@ body {
   white-space: nowrap;
 }
 
-.view-btn li {
-  margin: 0 8px;
-  background-color: #36b37e;
-  color: #fff;
-  padding: 8px;
-  border-radius: 4px;
-}
-
 .technologies li:hover {
   background-color: #36b37f;
   color: white;
@@ -535,6 +522,19 @@ body {
 
 .bottom-line {
   display: none;
+}
+
+.menu.active li {
+  margin: 10px 0;
+}
+
+.menu.active li a {
+  color: #344563;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
@@ -975,14 +975,16 @@ body {
   }
 
   .about-bg-img {
-    background: url(../assets/images/about-me/about-me-left.svg) left no-repeat,
+    background:
+      url(../assets/images/about-me/about-me-left.svg) left no-repeat,
       url(../assets/images/about-me/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
-        no-repeat,
+    background:
+      url(../assets/images/bottom-bg/left-img.svg) left bottom
+      no-repeat,
       url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
   }
 }
@@ -1004,7 +1006,7 @@ body {
   .logo {
     display: block;
   }
-  
+
   .menu {
     display: none;
   }
@@ -1113,16 +1115,18 @@ body {
   }
 
   .about-bg-img {
-    background: url(../assets/images/about-me/about-me-left.svg) left bottom
-        no-repeat,
+    background:
+      url(../assets/images/about-me/about-me-left.svg) left bottom
+      no-repeat,
       url(../assets/images/about-me/aboutmedesktop-right.svg) right top
-        no-repeat;
+      no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
-        no-repeat,
+    background:
+      url(../assets/images/bottom-bg/left-img.svg) left bottom
+      no-repeat,
       url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
