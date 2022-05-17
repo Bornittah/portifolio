@@ -34,8 +34,6 @@ body {
 
 .toolbar {
   padding: 26px 24px;
-  display: flex;
-  justify-content: space-between;
   background: transparent;
   height: 72px;
   top: 0;
@@ -63,10 +61,10 @@ body {
 }
 
 .nav-menu {
-  display: flex;
+  display: flex !important;
   width: 80%;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
   margin: 24px auto;
 }
 
@@ -548,6 +546,8 @@ body {
 
   .toolbar {
     background: white;
+    display: flex;
+    justify-content: center;
   }
 
   .overlay.active {
@@ -559,14 +559,18 @@ body {
   }
 
   .nav-menu {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
   }
 
   .menu {
     display: flex;
+  }
+
+  .menu.active {
+    display: block;
   }
 
   .section {
@@ -990,7 +994,7 @@ body {
 
   .nav-menu {
     justify-content: space-between;
-    display: flex;
+    display: flex !important;
   }
 
   .hamburger {
