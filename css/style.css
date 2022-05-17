@@ -95,6 +95,20 @@ body {
   display: block;
 }
 
+.hamburger {
+  cursor: pointer;
+  color: #1a1b1b;
+}
+
+.bar {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #1a1b1b;
+  transition: all 0.3s ease-in-out;
+}
+
 .section {
   align-items: center;
   margin: 24px auto;
@@ -497,6 +511,10 @@ body {
 
   .menu {
     display: flex;
+  }
+
+  .menu-popup {
+    display: none;
   }
 
   .section {
