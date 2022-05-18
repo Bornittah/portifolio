@@ -234,12 +234,16 @@ body {
   display: none;
 }
 
+.projects-set {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  align-items: center;
-  justify-content: center;
 }
 
 .grid-item {
@@ -337,6 +341,7 @@ body {
 .skills-set {
   width: 80%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .skill-item {
