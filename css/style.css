@@ -141,7 +141,7 @@ body {
 
 .overlay.active {
   display: block;
-  height: 98vh;
+  height: 90%;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -149,7 +149,7 @@ body {
   border-radius: 5%;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   left: 0;
-  top: 0;
+  margin: auto 0;
   overflow: hidden;
   transition: 0.5s;
   color: white;
@@ -247,13 +247,19 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 8px;
-  height: 100%;
+  height: 474px;
+  width: 369px;
+
 }
 
 .item-image {
-  height: 237px;
+  height: 252px;
   width: 100%;
-  background-color: #ebf0ee;
+  /* background-color: #ebf0ee; */
+}
+
+.item-image img {
+  width: 100%;
 }
 
 .project img {
@@ -534,7 +540,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
-  font-size: 32px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
@@ -671,7 +676,12 @@ body {
   .item-image {
     height: 237px;
     width: 100%;
-    background-color: #ebf0ee;
+    /* background-color: #ebf0ee; */
+  }
+
+  .item-image img {
+    width: 100%;
+
   }
 
   .project img {
