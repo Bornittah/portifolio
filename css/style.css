@@ -237,7 +237,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item {
@@ -247,12 +249,12 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 8px;
+  width: 369px;
 }
 
 .item-image {
   height: 252px;
   width: 100%;
-  background-color: #ebf0ee;
 }
 
 .project img {
@@ -333,9 +335,8 @@ body {
 }
 
 .skills-set {
-  margin: 30px auto;
   width: 80%;
-  list-style-type: none;
+  margin: 0 auto;
 }
 
 .skill-item {
@@ -345,6 +346,10 @@ body {
   background-size: cover;
   padding: 30px auto;
   border: none;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item-icon {
@@ -535,7 +540,7 @@ body {
   line-height: 44px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -572,8 +577,7 @@ body {
   }
 
   .section {
-    align-items: center;
-    margin: 24px auto;
+    width: 100%;
   }
 
   .section-bg-image {
@@ -650,25 +654,9 @@ body {
     display: none;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
-
-  .grid-item {
-    border: 1px solid #d6d5da;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-  }
-
   .item-image {
     height: 237px;
     width: 100%;
-    background-color: #ebf0ee;
   }
 
   .project img {
@@ -732,21 +720,6 @@ body {
     max-width: 70%;
     max-height: 70%;
     object-fit: contain;
-  }
-
-  .skills-set {
-    margin: 30px auto;
-    width: 80%;
-    list-style-type: none;
-  }
-
-  .skill-item {
-    background-image: url(../assets/images/Img-Plaholder.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px auto;
-    border: none;
   }
 
   .item-icon {
@@ -1018,16 +991,17 @@ body {
     margin: 24px auto;
   }
 
-  .section {
-    margin: 0 auto;
-  }
-
   .section-bg-image {
     height: 80%;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    width: 327px;
+    margin: 0 auto;
   }
 
   .technologies li {

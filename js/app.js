@@ -60,3 +60,30 @@ let projects=[
     }
 ];
 
+let div=document.createElement('div');
+div.className='grid-item';
+
+for(let obj of projects){
+    let tech=obj.teachnologies;
+    div.innerHTML=
+    `<div class="item-image">
+        <img src="${obj.featuredImage}" alt="featured-image">
+    </div>
+    <div class="item-description">
+        <div class="item-title">
+            <h2>
+            ${obj.name}
+            </h2>
+        </div>
+        <ul class="technologies">`
+        for(let i=0; i<tech.length; i++){
+            `<li> <a href="#">${tech[i]}</a></li>`
+        }
+        `</ul>
+    </div>
+    <div class="green-btn">
+        <a href="single-project.html">See Project</a>
+    </div>`;
+}
+
+document.querySelector('.projects').appendChild(div);
