@@ -13,21 +13,27 @@
     <div class="container">
         <div class="section-bg-image">
         <header class="toolbar">
-            <nav class="nav-menu">
-                <a href="index.html" class="logo primary">Bornittah</a>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Portifolio</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <img src="./assets/icons/bars-solid.svg" class="navbar icon" alt="navbar-icon">
-            </nav>
+            <div class="overlay">
+                <nav class="nav-menu">
+                    <a href="index.html" class="logo primary">Bornittah</a>
+                    <ul class="menu">
+                        <li>
+                            <a  class="menu-link" href="#portfolio">Portifolio</a>
+                        </li>
+                        <li>
+                            <a  class="menu-link" href="#about">About</a>
+                        </li>
+                        <li> 
+                            <a  class="menu-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
         </header>
         <section class="section">
             <div class="wrapper">
@@ -77,21 +83,21 @@
             </div>
         </section>
     </div>
-        <section class="section">
+        <section id="portfolio" class="section">
             <div class="title">
                 <h2 class="primary-text">My Recent Works</h2>
                 <hr class="line" />
             </div>
-            <div class="grid-container">
+            <div class="grid-container projects">
                 <div class="grid-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                    </div>
                     <div class="item-description">
                         <div class="item-title">
-                            <h2>Mult-Post Stories</h2>
-                            <h3>Gain + Glory</h3>
+                            <h2 id="title">Mult-Post Stories<br>Gain + Glory</h2>
                         </div>
                         <ul class="technologies">
-                            <li> <a href="#">Javascript</a></li>
+                            <li id="tech"> <a href="#">Javascript</a></li>
                             <li> <a href="#"> Ruby on rails </a></li>
                             <li><a href="#">HTML</a></li>
                             <li><a href="#">CSS</a></li>
@@ -202,7 +208,7 @@
             </div>
 
         </section>
-        <section class="section">
+        <section id="about" class="section">
            <div class="about-bg-img">
             <div class="about-header">
                 <div class="title">
@@ -261,7 +267,7 @@
 
             </ul>
         </section>
-        <section class="section contact-bg-img">
+        <section id="contact" class="section contact-bg-img">
                 <div class="contacts-row">
                     <div class="contact-column">
                         <p class="contact-notice">
@@ -322,6 +328,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
