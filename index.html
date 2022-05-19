@@ -89,26 +89,27 @@
                 <hr class="line" />
             </div>
             <div class="grid-container projects-set projects">
-                <!-- <div class="grid-item">
+               <!-- <div class="grid-item">
                     <div class="item-image">
+                        <img id="image" src="" alt="">
                     </div>
                     <div class="item-description">
                         <div class="item-title">
-                            <h2 id="title">Mult-Post Stories<br>Gain + Glory</h2>
+                            <h2 id="title"></h2>
                         </div>
                         <ul class="technologies">
-                            <li id="tech"> <a href="#">Javascript</a></li>
-                            <li> <a href="#"> Ruby on rails </a></li>
+                            <li> <a href="#" id="tech"></a></li>
+                            <!-- <li> <a href="#"> Ruby on rails </a></li>
                             <li><a href="#">HTML</a></li>
-                            <li><a href="#">CSS</a></li>
-                        </ul>
+                            <li><a href="#">CSS</a></li> -->
+                        <!-- </ul>
                     </div>
                     <div class="green-btn">
                         <a href="single-project.html">See Project</a>
                     </div>
-                </div>
+                </div>  -->
 
-                <div class="grid-item">
+                 <!-- <div class="grid-item">
                     <div class="item-image"></div>
                     <div class="item-description">
                         <div class="item-title">
@@ -204,10 +205,39 @@
                         <a href="single-project.html">See Project</a>
                     </div>
                 </div> -->
-
             </div>
-
         </section>
+        <!-- modal -->
+        <div class="project-details">
+            <div class="project-image">
+                <img src="assets/images/Snapshoot-Portfolio.svg" alt="project-image" />
+            </div>
+            <div class="project-title">
+                <h1>Keeping track of hundreds of components</h1>
+                <ul class="view-btn">
+                    <li>
+                        <a href="">See Live</a>
+                    </li>
+                    <li>
+                        <a href="">See Progress</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="frameworks">
+                    <li>Bootstrap</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSpec</li>
+                    <li>Capybara</li>
+                    <li>Selenium</li>
+                </ul>
+            </div>
+            <div class="project-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+                </p>
+            </div>
+        </div>
         <section id="about" class="section">
            <div class="about-bg-img">
             <div class="about-header">
@@ -276,19 +306,23 @@
                         <img class="bottom-bg-image" src="./assets/images/bottom-bg/middle-img.svg" alt="middle-img " />
                     </div>
                     <div class="contact-column">
-                        <form action="https://formspree.io/f/mpzbobyr" method="post">
+                        <form action="https://formspree.io/f/mpzbobyr" method="post" id="form">
                             <div class="form-group">
                                 <input type="text" maxlength="30" name="firstname" placeholder="First Name" required>
                                 <input type="text" maxlength="30" name="lastname" placeholder="Last Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" required placeholder=" Email Address ">
+                                <input type="email" name="email" id="email" required placeholder=" Email Address ">
                             </div>
                             <div class="form-group">
                                 <textarea rows="5" maxlength="500" name="message" placeholder="Type something here" required ></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="submit">Get in touch</button>
+                            </div>
+                            <div class="error-message">
+                                <img src="./assets/images/error.png" alt="error">
+                                <p>Error "Form not sent"<br><b>Reason: </b>The content of the email field has to be in lower case </p>
                             </div>
                         </form>
                     </div>

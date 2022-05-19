@@ -20,7 +20,17 @@ const logo = document.querySelector('.logo');
 });
 });
 
+// form validation
+const form=document.querySelector('#form');
 
+form.addEventListener('submit', (e)=>{
+    const email=document.querySelector('#email').value;
+    const errorMsg=document.querySelector('.error-message');
+
+   
+});
+
+// popup window
 let projects=[
     {
         name:"Keeping track of hundreds of components",
@@ -60,29 +70,40 @@ let projects=[
     }
 ];
 
-let div=document.createElement('div');
-div.className='grid-item';
-
+let div=document.querySelector('.grid-container')
 for(let obj of projects){
     let tech=obj.teachnologies;
-    div += `<div class="item-image">
+    div+=`<div class="grid-item">
+    <div class="item-image">
         <img src="${obj.featuredImage}" alt="featured-image">
-    </div>`;
-    div += `<div class="item-description">
+    </div>
+    <div class="item-description">
         <div class="item-title">
             <h2>
             ${obj.name}
             </h2>
         </div>
-        <ul class="technologies">`;
-        for(let i=0; i<tech.length; i++){
-           div += `<li> <a href="#">${tech[i]}</a></li>`
-        }
-        div += `</ul>
+       <ul class="technologies">
+          <li> <a href="#">${tech[0]}</a></li>
+          <li> <a href="#">${tech[1]}</a></li>
+          <li> <a href="#">${tech[2]}</a></li>
+          <li> <a href="#">${tech[3]}</a></li>
+      </ul>
+   </div>
+   <div class="green-btn">
+        <a href="" class="viewProject">See Project</a>
     </div>
-    <div class="green-btn">
-        <a href="single-project.html">See Project</a>
     </div>`;
 }
 
 document.querySelector('.projects').innerHTML=div;
+
+const projectDetailsModal=document.querySelector('.project-details');
+
+document.querySelectorAll('.viewProject').forEach((button)=>{
+    button.addEventListener('click', (e)=>{
+        e.preventDefault();
+        projectDetailsModal.style.display='flex';
+    });
+
+});
