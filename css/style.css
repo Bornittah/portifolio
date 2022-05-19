@@ -919,7 +919,7 @@ body {
 
   .view-btn li {
     margin: 0 8px;
-    background-color: #36b37e;
+    background-color: #053a24;
     color: #fff;
     padding: 8px;
     border-radius: 4px;
@@ -960,7 +960,7 @@ body {
   }
 
   .green-btn a:active {
-    background-color: #008552;
+    background-color: #043120;
   }
 
   div > .green-btn a:hover {
