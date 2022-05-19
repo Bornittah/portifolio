@@ -26,11 +26,16 @@ const form=document.querySelector('#form');
 form.addEventListener('submit', (e)=>{
     const email=document.querySelector('#email').value;
     const errorMsg=document.querySelector('.error-message');
+if (email!== email.toLowerCase()) {
+e.preventDefault();
+errorMsg.style.display='flex';
+}
 
    
 });
 
 // popup window
+
 let projects=[
     {
         name:"Keeping track of hundreds of components",
