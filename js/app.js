@@ -20,6 +20,21 @@ const logo = document.querySelector('.logo');
 });
 });
 
+// form validation
+const form=document.querySelector('#form');
+
+form.addEventListener('submit', (e)=>{
+    const email=document.querySelector('#email').value;
+    const errorMsg=document.querySelector('.error-message');
+if (email!== email.toLowerCase()) {
+e.preventDefault();
+errorMsg.style.display='flex';
+}
+
+   
+});
+
+// popup window
 
 let projects=[
     {
@@ -60,13 +75,11 @@ let projects=[
     }
 ];
 
-let div=document.createElement('div');
-div.className='grid-item';
-
+let div=document.querySelector('.grid-container')
 for(let obj of projects){
     let tech=obj.teachnologies;
-    div.innerHTML=
-    `<div class="item-image">
+    div+=`<div class="grid-item">
+    <div class="item-image">
         <img src="${obj.featuredImage}" alt="featured-image">
     </div>
     <div class="item-description">
@@ -75,15 +88,27 @@ for(let obj of projects){
             ${obj.name}
             </h2>
         </div>
-        <ul class="technologies">`
-        for(let i=0; i<tech.length; i++){
-            `<li> <a href="#">${tech[i]}</a></li>`
-        }
-        `</ul>
+       <ul class="technologies">
+          <li> <a href="#">${tech[0]}</a></li>
+          <li> <a href="#">${tech[1]}</a></li>
+          <li> <a href="#">${tech[2]}</a></li>
+          <li> <a href="#">${tech[3]}</a></li>
+      </ul>
+   </div>
+   <div class="green-btn">
+        <a href="" class="viewProject">See Project</a>
     </div>
-    <div class="green-btn">
-        <a href="single-project.html">See Project</a>
     </div>`;
 }
 
-document.querySelector('.projects').appendChild(div);
+document.querySelector('.projects').innerHTML=div;
+
+const projectDetailsModal=document.querySelector('.project-details');
+
+document.querySelectorAll('.viewProject').forEach((button)=>{
+    button.addEventListener('click', (e)=>{
+        e.preventDefault();
+        projectDetailsModal.style.display='flex';
+    });
+
+});

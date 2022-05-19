@@ -234,12 +234,16 @@ body {
   display: none;
 }
 
+.projects-set {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  align-items: center;
-  justify-content: center;
 }
 
 .grid-item {
@@ -337,6 +341,7 @@ body {
 .skills-set {
   width: 80%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .skill-item {
@@ -481,12 +486,34 @@ body {
   background-color: #008552;
 }
 
+.error-message {
+  display: none;
+  color: #e21e04;
+  background: #e6ebed;
+  border-radius: 15px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message img {
+  height: 30px;
+}
+
 .project-details {
-  display: flex;
+  display: none;
   flex-direction: column;
-  margin: 24px auto;
+  height: 90%;
   width: 100%;
-  padding: 25px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 5%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  left: 0;
+  margin: auto 0;
+  overflow: hidden;
+  transition: 0.5s;
+  color: white;
 }
 
 .project-image {
@@ -851,11 +878,19 @@ body {
   }
 
   .project-details {
-    display: flex;
+    display: none;
     flex-direction: column;
-    margin: 24px auto;
+    height: 90%;
     width: 100%;
-    padding: 25px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 5%;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    left: 0;
+    margin: auto 0;
+    overflow: hidden;
+    transition: 0.5s;
+    color: white;
   }
 
   .project-image {
