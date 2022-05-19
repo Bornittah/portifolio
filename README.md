@@ -27,7 +27,7 @@ Give a star if you like this project
 # License
 This project is MIT licensed.
 
-# Author
+# Authors
 1. Agasha Bornittah 
 Github: https://github.com/Bornittah
 2. Abby Nyakara
