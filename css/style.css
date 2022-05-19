@@ -497,7 +497,7 @@ body {
 }
 
 .error-message img {
-height: 30px;
+  height: 30px;
 }
 
 .project-details {
@@ -980,16 +980,14 @@ height: 30px;
   }
 
   .about-bg-img {
-    background:
-      url(../assets/images/about-me/about-me-left.svg) left no-repeat,
+    background: url(../assets/images/about-me/about-me-left.svg) left no-repeat,
       url(../assets/images/about-me/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background:
-      url(../assets/images/bottom-bg/left-img.svg) left bottom
-      no-repeat,
+    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
+        no-repeat,
       url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
   }
 }
@@ -1121,18 +1119,16 @@ height: 30px;
   }
 
   .about-bg-img {
-    background:
-      url(../assets/images/about-me/about-me-left.svg) left bottom
-      no-repeat,
+    background: url(../assets/images/about-me/about-me-left.svg) left bottom
+        no-repeat,
       url(../assets/images/about-me/aboutmedesktop-right.svg) right top
-      no-repeat;
+        no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background:
-      url(../assets/images/bottom-bg/left-img.svg) left bottom
-      no-repeat,
+    background: url(../assets/images/bottom-bg/left-img.svg) left bottom
+        no-repeat,
       url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
