@@ -1121,11 +1121,11 @@ body {
   }
 
   .about-bg-img {
-     background:
-       url(../assets/images/about-me/about-me-left.svg) left bottom
-       no-repeat,
-       url(../assets/images/about-me/aboutmedesktop-right.svg) right top
-       no-repeat;
+    background:
+      url(../assets/images/about-me/about-me-left.svg) left bottom
+      no-repeat,
+      url(../assets/images/about-me/aboutmedesktop-right.svg) right top
+      no-repeat;
     background-size: 100px, 500px, auto;
   }
 
