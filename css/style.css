@@ -223,7 +223,7 @@ body {
 .down-arrow img {
   border-radius: 50%;
   padding: 8px;
-  border: 1px solid #aeb3bb;
+  border: 1px solid rgba(235, 240, 238, 1);
 }
 
 .line {
@@ -288,17 +288,23 @@ body {
 
 .frameworks li {
   padding: 10px;
-  background-color: #aeb3bb;
+  background-color: rgba(235, 240, 238, 1);
   text-align: center;
   margin: 5px 5px;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   border-radius: 5px;
   white-space: nowrap;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .view-btn li a {
   text-decoration: none;
   color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .technologies li a {
@@ -524,16 +530,22 @@ body {
   border: 1px solid #ebecf0;
   border-radius: 8px;
   transform: translate(-50%), -50%;
-  height: 90%;
   width: 60%;
   margin: auto;
   overflow-y: scroll;
   display: none;
+  height: 100%;
+  min-height: 90vh;
+  flex-wrap: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .modal.active {
   transform: translate(5%, 0) scale(1);
   display: flex;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .modal-header {
@@ -592,6 +604,7 @@ body {
 
 .project-title h2 {
   flex: 1;
+  word-wrap: break-word;
 }
 
 .view-btn {
@@ -609,6 +622,8 @@ body {
   list-style-type: none;
   display: flex;
   margin: 12px 0;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .project-description {
@@ -740,7 +755,7 @@ body {
   .down-arrow img {
     border-radius: 50%;
     padding: 8px;
-    border: 1px solid #aeb3bb;
+    border: 1px solid rgba(235, 240, 238, 1);
   }
 
   .line {
@@ -971,8 +986,8 @@ body {
   .view-btn {
     list-style-type: none;
     display: flex;
-    width: 100%;
     flex: 1;
+    justify-content: flex-end;
   }
 
   .form-group button:active {
@@ -984,6 +999,8 @@ body {
     background: #36b37e;
     color: #fff;
     border-radius: 4px;
+    white-space: nowrap;
+    height: auto;
   }
 
   .view-btn li a {
@@ -1002,6 +1019,8 @@ body {
     list-style-type: none;
     display: flex;
     margin: 20px 0;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .frameworks li {
@@ -1036,7 +1055,7 @@ body {
   }
 
   .footer {
-    border-top: 1px solid #aeb3bb;
+    border-top: 1px solid rgba(235, 240, 238, 1);
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -1137,10 +1156,16 @@ body {
   }
 
   .modal {
-    width: 90%;
     border-radius: 16px;
     padding: 16px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 343px;
     height: 90%;
+    min-height:90vh;
+    flex-wrap: nowrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .close {
@@ -1156,13 +1181,27 @@ body {
     float: right;
   }
 
+  .project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    flex-shrink: 0;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
   .project-title {
     flex-direction: column;
   }
 
   .frameworks {
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .view-btn {
@@ -1181,9 +1220,8 @@ body {
   .view-btn li a {
     flex: 1;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
   }
 
   .technologies li a {
