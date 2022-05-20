@@ -76,7 +76,7 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"./assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -85,7 +85,7 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"../assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -94,7 +94,7 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"../assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -103,7 +103,7 @@ let projects=[
     {
         title:"Keeping ",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"../assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -145,11 +145,6 @@ document.querySelectorAll('.viewProject').forEach((button, key)=>{
         e.preventDefault();
         document.querySelector('.modal-overlay').classList.add('active');
         projectDetailsModal.classList.toggle('active');
-
-        document.querySelector('.modal-overlay').addEventListener('click', ()=>{
-            document.querySelector('.modal-overlay').classList.remove('active');
-            projectDetailsModal.classList.remove('active');
-        });
 
         let proj=projects[key];
 
@@ -202,20 +197,10 @@ document.querySelectorAll('.viewProject').forEach((button, key)=>{
           `;
           document.querySelector('.modal').innerHTML=div;
 
-        //     document.querySelector('.close').addEventListener('click', ()=>{
-        //     document.querySelector('.modal-overlay').classList.remove('active');
-        //     projectDetailsModal.classList.remove('active');
-        // });
-
-            // document.querySelector('.featured-image').src=proj.featuredImage;
-            // document.querySelector('.project-title h1').innerHTML=proj.title;
-            // document.querySelector('.project-description p').innerHTML=proj.description;
-            // document.querySelector('.see-progress').href=proj.versionURL;
-            // document.querySelector('.see-live').href=proj.sourceURL;
-
-            //
-            //   let li=document.createElement('li');
-            
+            document.querySelector('.close').addEventListener('click', ()=>{
+            document.querySelector('.modal-overlay').classList.remove('active');
+            projectDetailsModal.classList.remove('active');
+        });  
       
     });
 
