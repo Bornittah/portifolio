@@ -1162,7 +1162,7 @@ body {
     position: absolute;
     width: 343px;
     height: 90%;
-    min-height:90vh;
+    min-height: 90vh;
     flex-wrap: nowrap;
     overflow-wrap: break-word;
     word-wrap: break-word;
