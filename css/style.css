@@ -1203,11 +1203,10 @@ body {
   .view-btn.view-2 {
     display: flex;
   }
-  
+
   .view-btn.view-1 {
     display: none;
   }
-  
 
   .line {
     display: block;
