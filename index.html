@@ -116,48 +116,41 @@
           <hr class="line" />
         </div>
         <div class="grid-container projects-set projects"></div>
-      </section>
-      <!-- modal -->
-      <div class="project-details">
-        <div class="project-image">
-          <img
-            src="assets/images/Snapshoot-Portfolio.svg"
-            alt="project-image"
-          />
-        </div>
-        <div class="project-title">
-          <h1>Keeping track of hundreds of components</h1>
-          <ul class="view-btn">
-            <li>
-              <a href="">See Live</a>
-            </li>
-            <li>
-              <a href="">See Progress</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="frameworks">
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSpec</li>
-            <li>Capybara</li>
-            <li>Selenium</li>
-          </ul>
-        </div>
-        <div class="project-description">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
-            text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it 1960s with
-            the relea
-          </p>
-        </div>
+            <!-- modal -->
+     <div class="modal-overlay">
+     <div class="modal" id="project-modal">
+      <div class="modal-header">
+       <span class="close">&times;</span>
       </div>
+      <div class="modal-body">
+       <div class="project-image">
+         <img class="featured-image" src="" alt="project-image" />
+       </div>
+       <div class="project-title">
+         <h1></h1>
+         <ul class="view-btn">
+           <li>
+             <a class="see-live" href="">See Live
+             <img src="./assets/icons/see-icon.svg" alt="explore">
+             </a>
+           </li>
+           <li>
+             <a class="see-progress" href="">See Progress
+               <img src="./assets/icons/github-white.svg" alt="github">
+             </a>
+             
+           </li>
+         </ul>
+       </div>
+       <ul class="frameworks"> </ul>
+       <div class="project-description">
+         <p></p>
+       </div>
+      </div>
+     </div>
+   </div>
+     </section>
+      
       <section id="about" class="section">
         <div class="about-bg-img">
           <div class="about-header">
@@ -245,6 +238,7 @@
                   type="text"
                   maxlength="30"
                   name="firstname"
+                  id="firstname"
                   placeholder="First Name"
                   required
                 />
@@ -252,6 +246,7 @@
                   type="text"
                   maxlength="30"
                   name="lastname"
+                  id="lastname"
                   placeholder="Last Name"
                   required
                 />
@@ -270,6 +265,7 @@
                   rows="5"
                   maxlength="500"
                   name="message"
+                  id="message"
                   placeholder="Type something here"
                   required
                 ></textarea>
