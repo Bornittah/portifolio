@@ -47,7 +47,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
   width: 98px;
-  height: 24px;
 }
 
 .down-arrow a {
@@ -240,6 +239,11 @@ body {
   justify-content: center;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -257,22 +261,29 @@ body {
 }
 
 .item-image {
-  height: 252px;
+  height: 237px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.project img {
-  background-color: #aeb3bb;
-  height: 237px;
+.item-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .item-description {
   border-radius: 5px;
   margin: 10px auto;
+  flex: 1;
 }
 
 .item-title {
   text-align: center;
+  margin: 16px;
 }
 
 .frameworks li {
@@ -309,6 +320,7 @@ body {
   text-align: center;
   list-style-type: none;
   white-space: nowrap;
+  justify-content: center;
 }
 
 .technologies li {
@@ -324,7 +336,7 @@ body {
 }
 
 .green-btn {
-  margin: 24px auto;
+  margin: 16px auto;
 }
 
 .about-header {
@@ -513,7 +525,7 @@ body {
   border-radius: 8px;
   transform: translate(-50%), -50%;
   height: 90%;
-  width: 50%;
+  width: 60%;
   margin: auto;
   overflow-y: scroll;
   display: none;
@@ -525,21 +537,21 @@ body {
 }
 
 .modal-header {
-  height: 38px;
+  margin: 14px 0;
 }
 
 .close {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  position: absolute;
+  position: sticky;
   width: 40px;
   height: 40px;
   right: 24px;
   background: #ebecf0;
   mix-blend-mode: multiply;
   border-radius: 8px;
+  float: right;
 }
 
 .modal-overlay {
@@ -551,7 +563,7 @@ body {
   background: #c1c7d0;
   opacity: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 5;
 }
 
 .modal-overlay.active {
@@ -560,12 +572,16 @@ body {
 }
 
 .project-image {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .project-title {
@@ -574,9 +590,15 @@ body {
   margin: 12px 0;
 }
 
+.project-title h2 {
+  flex: 1;
+}
+
 .view-btn {
   list-style-type: none;
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .frameworks {
@@ -727,15 +749,16 @@ body {
   .item-image {
     height: 237px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 
   .item-image img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .project img {
-    background-color: #aeb3bb;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .item-description {
@@ -778,12 +801,12 @@ body {
     margin: 30px auto;
     width: 55%;
     position: relative;
-    z-index: 100;
+    z-index: 1;
   }
 
   .about-bg-imgs {
     position: absolute;
-    z-index: -100;
+    z-index: -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -835,7 +858,7 @@ body {
     display: flex;
     margin: 80px auto;
     width: 80%;
-    z-index: 100;
+    z-index: 1;
     position: relative;
   }
 
@@ -923,14 +946,16 @@ body {
   }
 
   .project-image {
-    width: 872px;
-    height: 616px;
-    margin: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 
   .project-image img {
-    width: 100%;
-    height: 100%;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .project-title {
@@ -942,6 +967,8 @@ body {
   .view-btn {
     list-style-type: none;
     display: flex;
+    width: 100%;
+    flex: 1;
   }
 
   .form-group button:active {
@@ -964,7 +991,7 @@ body {
   }
 
   .view-btn li a > img {
-    margin-left: 14px;
+    margin-left: 8px;
   }
 
   .frameworks {
@@ -1080,6 +1107,11 @@ body {
     font-size: 0.7rem;
   }
 
+  .item-title {
+    text-align: center;
+    margin: 12px;
+  }
+
   .contacts-row {
     flex-direction: column;
     margin: 20px auto;
@@ -1100,25 +1132,52 @@ body {
     margin: 0;
   }
 
+  .modal {
+    width: 90%;
+    border-radius: 16px;
+    padding: 16px;
+    height: 90%;
+  }
+
+  .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    background: #ebecf0;
+    border-radius: 8px;
+    float: right;
+  }
+
   .project-title {
     flex-direction: column;
   }
 
   .frameworks {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
   }
 
   .view-btn {
-    position: sticky;
-    top: 90vh;
-    bottom: 15px;
-    width: 90%;
+    width: 100%;
     margin: 8px auto;
   }
 
   .view-btn li {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+
+  .view-btn li a {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
   }

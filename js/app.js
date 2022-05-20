@@ -111,10 +111,10 @@ let projects=[
     }
 ];
 
-let string='';
+let project='';
 for(let obj of projects){
     let tech=obj.teachnologies;
-    string+=`<div class="grid-item">
+    project+=`<div class="grid-item project">
     <div class="item-image">
         <img src="${obj.featuredImage}" alt="featured-image">
     </div>
@@ -128,49 +128,82 @@ for(let obj of projects){
           <li> <a href="#">${tech[2]}</a></li>
           <li> <a href="#">${tech[3]}</a></li>
       </ul>
-   </div>
-   <div class="green-btn">
+      <div class="green-btn">
         <a href="" data-modal-target="#project-modal" class="viewProject">See Project</a>
     </div>
+   </div>
 </div>`;
 
 }
 
-document.querySelector('.projects').innerHTML=string;
+document.querySelector('.projects').innerHTML=project;
 
 const projectDetailsModal=document.querySelector('.modal');
 
-document.querySelectorAll('.viewProject').forEach((button)=>{
+document.querySelectorAll('.viewProject').forEach((button, key)=>{
     button.addEventListener('click', (e)=>{
         e.preventDefault();
         document.querySelector('.modal-overlay').classList.add('active');
         projectDetailsModal.classList.toggle('active');
-
-        document.querySelector('.close').addEventListener('click', ()=>{
-            document.querySelector('.modal-overlay').classList.remove('active');
-            projectDetailsModal.classList.remove('active');
-        });
 
         document.querySelector('.modal-overlay').addEventListener('click', ()=>{
             document.querySelector('.modal-overlay').classList.remove('active');
             projectDetailsModal.classList.remove('active');
         });
 
-        for(let proj of projects){ 
-            document.querySelector('.featured-image').src=proj.featuredImage;
-            document.querySelector('.project-title h1').innerHTML=proj.title;
-            document.querySelector('.project-description p').innerHTML=proj.description;
-            document.querySelector('.see-progress').href=proj.versionURL;
-            document.querySelector('.see-live').href=proj.sourceURL;
+        let proj=projects[key];
 
-            const ul=document.querySelector('.frameworks');
-              let li=document.createElement('li');
-              let list='';
-            for(let tech of proj.teachnologies){
-               list += `<li>${tech}</li>`;
-            }
-            ul.innerHTML = list;
-        }
+        div=`<div class="modal-header">
+             <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+             <div class="project-image">
+               <img class="featured-image" src=${proj.featuredImage} alt="project-image" />
+             </div>
+             <div class="project-title">
+               <h2>${proj.title}</h2>
+               <ul class="view-btn">
+                 <li>
+                   <a class="see-live" href=${proj.sourceURL}>See Live
+                   <img src="./assets/icons/see-icon.svg" alt="explore">
+                   </a>
+                 </li>
+                 <li>
+                   <a class="see-progress" href=${proj.versionURL}>See Progress
+                     <img src="./assets/icons/github-white.svg" alt="github">
+                   </a>
+                   
+                 </li>
+               </ul>
+             </div>
+             <ul class="frameworks">
+             <li>${proj.teachnologies[0]}</li>
+             <li>${proj.teachnologies[1]}</li>
+             <li>${proj.teachnologies[2]}</li>
+             <li>${proj.teachnologies[3]}</li>
+             </ul>
+             <div class="project-description">
+               <p>${proj.description}</p>
+             </div>
+            </div>
+          `;
+          document.querySelector('.modal').innerHTML=div;
+
+        //     document.querySelector('.close').addEventListener('click', ()=>{
+        //     document.querySelector('.modal-overlay').classList.remove('active');
+        //     projectDetailsModal.classList.remove('active');
+        // });
+
+            // document.querySelector('.featured-image').src=proj.featuredImage;
+            // document.querySelector('.project-title h1').innerHTML=proj.title;
+            // document.querySelector('.project-description p').innerHTML=proj.description;
+            // document.querySelector('.see-progress').href=proj.versionURL;
+            // document.querySelector('.see-live').href=proj.sourceURL;
+
+            //
+            //   let li=document.createElement('li');
+            
+      
     });
 
 });
