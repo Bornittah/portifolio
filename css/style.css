@@ -601,6 +601,10 @@ body {
   justify-content: flex-end;
 }
 
+.view-btn.view-2 {
+  display: none;
+}
+
 .frameworks {
   list-style-type: none;
   display: flex;
@@ -1099,7 +1103,7 @@ body {
   }
 
   .grid-item {
-    width: 327px;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -1195,6 +1199,15 @@ body {
   .technologies li a:hover {
     color: white;
   }
+
+  .view-btn.view-2 {
+    display: flex;
+  }
+  
+  .view-btn.view-1 {
+    display: none;
+  }
+  
 
   .line {
     display: block;

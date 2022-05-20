@@ -162,7 +162,7 @@ document.querySelectorAll('.viewProject').forEach((button, key)=>{
              </div>
              <div class="project-title">
                <h2>${proj.title}</h2>
-               <ul class="view-btn">
+               <ul class="view-btn view-1">
                  <li>
                    <a class="see-live" href=${proj.sourceURL}>See Live
                    <img src="./assets/icons/see-icon.svg" alt="explore">
@@ -185,6 +185,19 @@ document.querySelectorAll('.viewProject').forEach((button, key)=>{
              <div class="project-description">
                <p>${proj.description}</p>
              </div>
+             <ul class="view-btn view-2">
+             <li>
+               <a class="see-live" href=${proj.sourceURL}>See Live
+               <img src="./assets/icons/see-icon.svg" alt="explore">
+               </a>
+             </li>
+             <li>
+               <a class="see-progress" href=${proj.versionURL}>See Progress
+                 <img src="./assets/icons/github-white.svg" alt="github">
+               </a>
+               
+             </li>
+           </ul>
             </div>
           `;
           document.querySelector('.modal').innerHTML=div;
