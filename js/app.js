@@ -76,7 +76,8 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Snapshoot-Portfolio.svg",
+        image:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -85,7 +86,8 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Snapshoot-Portfolio.svg",
+        image:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -94,7 +96,8 @@ let projects=[
     {
         title:"Keeping track of hundreds of components",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Snapshoot-Portfolio.svg",
+        image:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -103,7 +106,8 @@ let projects=[
     {
         title:"Keeping ",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        featuredImage:"assets/images/Img-Plaholder.svg",
+        featuredImage:"assets/images/Snapshoot-Portfolio.svg",
+        image:"assets/images/Img-Plaholder.svg",
         teachnologies:['Bootstrap', 'RSpec','Selenium', 'Ruby on Rails'],
         versionURL:"https://github.com/Bornittah/portifolio",
         sourceURL:"https://github.com/Bornittah/portifolio",
@@ -116,7 +120,7 @@ for(let obj of projects){
     let tech=obj.teachnologies;
     project+=`<div class="grid-item project">
     <div class="item-image">
-        <img src="${obj.featuredImage}" alt="featured-image">
+        <img src="${obj.image}" alt="featured-image">
     </div>
     <div class="item-description">
         <div class="item-title">
@@ -180,20 +184,20 @@ document.querySelectorAll('.viewProject').forEach((button, key)=>{
              <div class="project-description">
                <p>${proj.description}</p>
              </div>
-             <ul class="view-btn view-2">
-             <li>
-               <a class="see-live" href=${proj.sourceURL}>See Live
-               <img src="./assets/icons/see-icon.svg" alt="explore">
-               </a>
-             </li>
-             <li>
-               <a class="see-progress" href=${proj.versionURL}>See Progress
-                 <img src="./assets/icons/github-white.svg" alt="github">
-               </a>
-               
-             </li>
-           </ul>
             </div>
+            <ul class="view-btn view-2">
+            <li>
+              <a class="see-live" href=${proj.sourceURL}>See Live
+              <img src="./assets/icons/see-icon.svg" alt="explore">
+              </a>
+            </li>
+            <li>
+              <a class="see-progress" href=${proj.versionURL}>See Progress
+                <img src="./assets/icons/github-white.svg" alt="github">
+              </a>
+              
+            </li>
+          </ul>
           `;
           document.querySelector('.modal').innerHTML=div;
 
