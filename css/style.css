@@ -556,14 +556,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
   width: 40px;
   height: 40px;
-  right: 24px;
   background: #ebecf0;
-  mix-blend-mode: multiply;
   border-radius: 8px;
   float: right;
+  right: 24px;
+  cursor: pointer;
 }
 
 .modal-overlay {
@@ -1168,17 +1167,22 @@ body {
     word-wrap: break-word;
   }
 
+  .modal-header {
+    margin: 0 0;
+  }
+
   .close {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
     width: 40px;
     height: 40px;
     right: 24px;
+    top: 24px;
     background: #ebecf0;
     border-radius: 8px;
     float: right;
+    position: absolute;
   }
 
   .project-image {
@@ -1240,6 +1244,8 @@ body {
 
   .view-btn.view-2 {
     display: flex;
+    bottom: 0;
+    left: 0;
   }
 
   .view-btn.view-1 {
